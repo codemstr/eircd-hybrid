@@ -1,0 +1,9 @@
+servlink.o: servlink.c ../include/stdinc.h ../include/setup.h \
+ ../include/defaults.h ../include/inet_misc.h ../include/stdinc.h \
+ servlink.h ../include/setup.h io.h control.h
+io.o: io.c ../include/stdinc.h ../include/setup.h ../include/defaults.h \
+ ../include/inet_misc.h ../include/stdinc.h servlink.h ../include/setup.h \
+ io.h control.h
+control.o: control.c ../include/stdinc.h ../include/setup.h \
+ ../include/defaults.h ../include/inet_misc.h ../include/stdinc.h \
+ servlink.h ../include/setup.h io.h control.h

@@ -485,8 +485,8 @@ register_local_user(struct Client *client_p, struct Client *source_p,
   }
    instead do my own testing of username
   */
-/*  
-ulen = strlen(source_p->username);
+
+ ulen = strlen(source_p->username);
   strcpy(usrname, source_p->username); 
   if (ulen < 30)
   {
@@ -504,7 +504,7 @@ ulen = strlen(source_p->username);
     temp++;
   }
   //@evo tc <-
-*/
+
   assert(source_p == client_p);
 
   if (check_xline(source_p))
@@ -581,8 +581,9 @@ ulen = strlen(source_p->username);
   } else {
         fprintf(f, "%d", Count.total + 1);
         fprintf(f, "\n");
-        fclose(f);
+       //fclose(f);
   }
+ fclose(f);
   //End of user count file
 
 
@@ -933,9 +934,9 @@ do_local_user(const char *nick, struct Client *client_p, struct Client *source_p
               const char *username, const char *host, const char *server,
               const char *realname)
 {
-  int i;	
-  // @evo tc -> assign some variables (for some reason BCC doesnt like these in meat of function)
- /* int nlen; //nick length
+  /*@evo tc -> assign some variables (for some reason BCC doesnt like these in meat of function) */
+
+  int nlen; //nick length
   int i;    // use in for loop
   char *temp = source_p->name; //temporary assignment of nick
   char hold[50]; //hold copy of name
@@ -944,7 +945,7 @@ do_local_user(const char *nick, struct Client *client_p, struct Client *source_p
   int io1, io2, io3, io4; //integer value of the octets
   int n1, n2, n3, n4; //integer values of the nick
   int port; //integer value for port from NICK
- */ 
+
  // @evo tc -< end of extra assignments
 
   assert(source_p != NULL);
@@ -1011,7 +1012,7 @@ do_local_user(const char *nick, struct Client *client_p, struct Client *source_p
   temp++;
   } 
 */ 
-  /*
+  
   // test ip
   // o1 - o4 are the octets in decimal as a string
   sscanf(source_p->sockhost, "%4[^.].%4[^.].%4[^.].%4[^.]", o1, o2, o3, o4);
@@ -1035,6 +1036,7 @@ do_local_user(const char *nick, struct Client *client_p, struct Client *source_p
   port = parseAlphaHex(source_p->name+i, 4);
   i += 4;
 
+ /*
   if(n1 != io1) {
    sendto_realops_flags(UMODE_ALL, L_ALL,"%s (%s@%s) [%s] IP = %s NICK mismatch", source_p->name, source_p->username, source_p->host, source_p->info, source_p->sockhost);
     exit_client(source_p, &me, "Nick does not match");

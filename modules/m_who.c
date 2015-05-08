@@ -383,24 +383,14 @@ do_who(struct Client *source_p, struct Client *target_p,
   }
   else
   {
-    if(IsOper(source_p)) {
-        sendto_one(source_p, form_str(RPL_WHOREPLY), from, to,
+    sendto_one(source_p, form_str(RPL_WHOREPLY), from, to,
 	       (chname) ? (chname) : "*",
 	       target_p->username,
 	       target_p->host, target_p->servptr->name, target_p->name,
 	       status, target_p->hopcount, target_p->info);
-    }
-
-    // normal users see spoof or ip if spoof not set in conf file
-    if(!IsOper(source_p)) {
-        sendto_one(source_p, form_str(RPL_WHOREPLY), from, to,
-	       (chname) ? (chname) : "*",
-	       target_p->username,
-	       target_p->host, target_p->servptr->name, target_p->name,
-	       status, target_p->hopcount, target_p->info);
-    }
   }
 }
+
 /*
 ** ms_who()
 **      parv[0] = sender prefix
