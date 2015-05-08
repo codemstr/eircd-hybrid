@@ -1,0 +1,39 @@
+This version of the hybrid 7.2.3 has been modified to work
+for hosting a chat Server for 4x4 Evolution and 4x4 Evolution 2.
+
+To find the changes in the files search for @evo in all the files
+and folders.
+
+To compile on linux system be sure to include --with-nicklen=12 during
+configure command.
+A typical compile would be simular to:
+make distclean
+./configure --prefix=$HOME/ircd --with-nicklen=12
+make
+make install
+
+*** As a convience i made a script for the commands above
+*** Just do ./go instead
+
+Compiling in windows has been tested with Borland C and MS Visual Studio
+using w32build in the contrib folder.
+
+A functional example of the ircd.conf file is evo.ircd.conf which needs to be
+put in the etc folder where ever evo was compiled at and renamed to ircd.conf
+
+A functional example of the ircd.motd is evo.ircd.motd which needs to be put
+in the etc folder whereever evo was compile at and renamed to ircd.motd
+
+In order for EVO2 game clients to enter server you must have a web server that
+has a file on it called evo2-backend.txt and in that file have the servers
+An example is also in the hybrid folder, and 4x4evo1-pc-english-backend.txt 
+for EVO1 also in the hybrid folder
+Then you need to tell the client where the master 4x4 server is.
+I usually modify the hosts file with the ip of the web where i put it
+An example of my hosts file is also in the hybrid folder
+
+
+
+I've updated this version with a password & challenge fix to allow either Evo 1 or 2 clients aboard.
+
+ -sponji

@@ -1,0 +1,10 @@
+irc:216.201.222.73: 6667 1234 "TRI's 4x4 Evolution 2 Server"
+irc:tonkas.no-ip.org: 6667 1234 "Tonkas Evo Server"
+irc:culb.strangled.net: 6662 1234 "Culbs Server"
+irc:openbsd.face.edu: 6662 1234 "Jiggas Server"
+irc:192.168.1.4: 6662 1234 "Tonkas Windows Server from home"
+irc:192.168.1.5: 6667 1234 "Tonkas Solaris Server from home"
+irc:192.168.1.6: 6667 1234 "Tonkas BSD Lynux Server from home"
+irc:192.168.1.7: 6667 1234 "Tonkas Fedora Lynux Server from home"
+irc:192.168.1.17: 6661 1235 "Tonkas Virtual Server from home"
+trackQueryUrl:pat.4x4wh.com/lte/in-game.php

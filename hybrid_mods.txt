@@ -1,0 +1,115 @@
+src\balloc.c
+defined EVO2_SERVER
+changed @tc to @evo tc
+---
+src\channel.c
+changed @fd to @evo fd
+let opers do what they want
+Added feature ircop can enter channel even if banned
+Added feature ircop can enter invite only rooms
+---
+src\client.c
+Added feature to disallow NICK change unless ircop
+changed @tc to @evo tc
+---
+src\modules.c
+added usrip, rchg, rlst, broadcast & ban
+changed @rf to @evo rf
+---
+src\s_conf.c
+removed chanmodes & chanlimit
+removed extra network info being sent to user during connect
+changed @tc to @evo tc
+---
+src\s_user.c
+added test ip routine
+Complete NICK check routine added including port 0 check
+added invis name check
+Removed build_date
+removed extra network info being sent to user during connect
+removed invalid username check due to foreign lang versions of evo
+add PING and VERSION just for a scare 5/14/08
+disabled modes g s w D G for normal users
+changed @tc to @evo tc
+---
+contrib\setup-win32.h
+defined EVO2_SERVER
+changed @rf to @evo rf
+---
+include\client.h
+set challenge variable
+changed @fd to @evo fd
+---
+include\ircd_defs.h
+raise userlen to 40
+raise reallen to 100
+changed @tc to @evo tc
+---
+include\modules.h
+added usrip, rchg, rlst, broadcast & ban
+changed @rf to @evo rf
+---
+include\setup.h
+define EVO2_SERVER
+changed @rf to @evo rf
+---
+modules\m_away.c
+removed away
+changed @tc to @evo tc
+---
+modules\m_evo.c
+removed time_t
+disable invis name ^ except ircops
+disable name starting with space
+fixed ban routine
+Modified ban to not allow ban of ircop
+changed @tc to @evo tc
+---
+modules\m_list.c
+removed ELIST & SAFELIST
+changed @tc to @evo tc
+---
+modules\m_names.c
+disable names except for ircops
+changed @tc to @evo tc
+---
+modules\m_whois.c
+disabled whois except for ircops
+changed @tc to @evo tc
+---
+modules\m_whowas.c
+disabled whowas except for ircops
+changed @tc to @evo tc
+---
+modules\m_stats.c
+added feature for only ircops can do stats
+---
+modules\m_lusers.c
+added feature to only ircops can do lusers
+----
+modules\m_who.c
+added feature to let ircops see ip instead of host which could be spoofed if set in ircd.conf
+---
+modules\Makefile.in
+included m_evo.c
+changed @tc to @evo tc
+---
+modules\core\m_kick.c
+added feature to not allow kick ircop
+---
+modules\core\m_join.c ---- if dont like this feature rename m_join.c.bak to m_join.c
+added feature only ircops can create channels
+---
+		
+ToDo:
+Allow ircop to be op'd
+
+Info of source_p
+source_p->username = hwid+version
+source_p->name = NICK
+source_p->host = hostname
+source_p->info = Name used in rchg
+source_p->sockhost = ip
+
+char test[30];
+sprintf(test,"text = %d", number)

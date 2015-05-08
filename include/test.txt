@@ -1,0 +1,887 @@
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\balloc.h and balloc.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\channel.h and channel.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\channel_mode.h and channel_mode.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\client.h and client.h
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\client.h
+  char*          auth_oper; /* Operator to become if they supply the response.*/
+
+  
+// @FD>>
+#ifdef EVO2_SERVER
+  unsigned challengeValue; /* the random "challenge" value we sent them - Evo2 only */
+#endif
+  int      triedHackCount;
+  time_t   bootHackerTime;
+// @FD<<
+};
+***** client.h
+  char*          auth_oper; /* Operator to become if they supply the response.*/
+};
+*****
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\common.h and common.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\dbuf.h and dbuf.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\defaults.h and defaults.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\event.h and event.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\fdlist.h and fdlist.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\fileio.h and fileio.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\handlers.h and handlers.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\hash.h and hash.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\hook.h and hook.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\hostmask.h and hostmask.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\inet_misc.h and inet_misc.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\ircd.h and ircd.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\ircd_defs.h and ircd_defs.h
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\ircd_defs.h
+
+#define USERLEN         40              /* @tc raise for evo */
+#define REALLEN         100             /* @tc raise for evo */
+#define KILLLEN         90
+***** ircd_defs.h
+
+#define USERLEN         10
+#define REALLEN         50
+#define KILLLEN         90
+*****
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\ircd_getopt.h and ircd_getopt.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\ircd_handler.h and ircd_handler.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\ircd_signal.h and ircd_signal.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\irc_getaddrinfo.h and irc_getaddrinfo.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\irc_getnameinfo.h and irc_getnameinfo.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\irc_res.h and irc_res.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\irc_reslib.h and irc_reslib.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\irc_string.h and irc_string.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\list.h and list.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\listener.h and listener.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\memory.h and memory.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\modules.h and modules.h
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\modules.h
+extern struct Message uhelp_msgtab;
+// @RF>>
+extern struct Message usrip_msgtab;
+extern struct Message rchg_msgtab;
+extern struct Message rlst_msgtab;
+extern struct Message broadcast_msgtab;
+extern struct Message ban_msgtab;
+// @RF<<
+
+***** modules.h
+extern struct Message uhelp_msgtab;
+
+*****
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\motd.h and motd.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\msg.h and msg.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\m_info.h and m_info.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\numeric.h and numeric.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\packet.h and packet.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\parse.h and parse.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\patchlevel.h and patchlevel.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\restart.h and restart.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\resv.h and resv.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\rlimits.h and rlimits.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\rsa.h and rsa.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\send.h and send.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\serno.h and serno.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h and setup.h
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* include/setup.h suitable for Windows compilers */
+/* $Id: setup-win32.h 309 2005-12-09 11:25:44Z adx $ */
+
+
+/*** BEGIN OF STANDARD CONFIGURATION SETTINGS ***/
+
+
+// @RF>>
+/* Define this if you're making an Evo2 server */
+#define EVO2_SERVER
+// @RF<<
+
+/* Set up your maximum allowed nickname length here. */
+#define _NICKLEN 20
+
+/* Maximum topic length (<=390) */
+#define TOPICLEN 160
+
+/* If you plan to move your installed ircd from C:\ircd to
+ * some other directory, modify the setting here.
+ * Remember to escape backslashes by typing them twice! */
+#define IRCD_PREFIX "c:\\program files\\ircd"
+
+/* If you want %halfops (chanmode +h) support on your network,
+ * uncomment the following line. */
+/* #define HALFOPS 1 */
+
+/* If you need additional non standard features provided in
+ * contrib/ modules, uncomment the following line. */
+/* #define BUILD_CONTRIB 1 */
+
+
+/*** END OF STANDARD CONFIGURATION SETTINGS ***/
+
+
+#ifndef _WIN32
+#define _WIN32
+#endif
+
+/* bison will generate broken syntax unless we define this */
+#ifndef __STDC__
+#define __STDC__ 1
+#endif
+
+***** setup.h
+/* include/setup.h.  Generated from setup.h.in by configure.  */
+/* include/setup.h.in.  Generated from configure.ac by autoheader.  */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the ban heap. */
+#define BAN_HEAP_SIZE 128
+
+***** setup.h
+/* Size of the ban heap. */
+#define BAN_HEAP_SIZE 1024
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the channel heap. */
+#define CHANNEL_HEAP_SIZE 256
+
+***** setup.h
+/* Size of the channel heap. */
+#define CHANNEL_HEAP_SIZE 1024
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the client heap. */
+#define CLIENT_HEAP_SIZE 256
+
+***** setup.h
+/* Size of the client heap. */
+#define CLIENT_HEAP_SIZE 1024
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the dbuf heap. */
+#define DBUF_HEAP_SIZE 64
+
+***** setup.h
+/* Size of the dbuf heap. */
+#define DBUF_HEAP_SIZE 512
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the dlink_node heap. */
+#define DNODE_HEAP_SIZE 256
+
+***** setup.h
+/* Size of the dlink_node heap. */
+#define DNODE_HEAP_SIZE 2048
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+
+/* Define to 1 if you have the `basename' function. */
+***** setup.h
+
+/* Define this if you want to enable gline voting. */
+#define GLINE_VOTING 1
+
+/* Define if you want halfops support. */
+/* #undef HALFOPS */
+
+/* Define to 1 if you have the `basename' function. */
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <crypt.h> header file. */
+/* #undef HAVE_CRYPT_H */
+
+***** setup.h
+/* Define to 1 if you have the <crypt.h> header file. */
+#define HAVE_CRYPT_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <dlfcn.h> header file. */
+/* #undef HAVE_DLFCN_H */
+
+***** setup.h
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#define HAVE_DLFCN_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+
+/* Define if the dlopen function is available. */
+/* #undef HAVE_DLOPEN */
+
+***** setup.h
+
+/* Define to 1 if you have the `dlinfo' function. */
+#define HAVE_DLINFO 1
+
+/* Define if the dlopen function is available. */
+#define HAVE_DLOPEN 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `EVP_bf_cfb' function. */
+/* #undef HAVE_EVP_BF_CFB */
+
+***** setup.h
+/* Define to 1 if you have the `EVP_bf_cfb' function. */
+#define HAVE_EVP_BF_CFB 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `EVP_cast5_cfb' function. */
+/* #undef HAVE_EVP_CAST5_CFB */
+
+***** setup.h
+/* Define to 1 if you have the `EVP_cast5_cfb' function. */
+#define HAVE_EVP_CAST5_CFB 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `EVP_des_cfb' function. */
+/* #undef HAVE_EVP_DES_CFB */
+
+***** setup.h
+/* Define to 1 if you have the `EVP_des_cfb' function. */
+#define HAVE_EVP_DES_CFB 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `EVP_des_ede3_cfb' function. */
+/* #undef HAVE_EVP_DES_EDE3_CFB */
+
+***** setup.h
+/* Define to 1 if you have the `EVP_des_ede3_cfb' function. */
+#define HAVE_EVP_DES_EDE3_CFB 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <inttypes.h> header file. */
+/* #undef HAVE_INTTYPES_H */
+
+***** setup.h
+/* Define to 1 if you have the <inttypes.h> header file. */
+#define HAVE_INTTYPES_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `crypto' library (-lcrypto). */
+/* #undef HAVE_LIBCRYPTO */
+
+***** setup.h
+/* Define to 1 if you have the `crypto' library (-lcrypto). */
+#define HAVE_LIBCRYPTO 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <libgen.h> header file. */
+/* #undef HAVE_LIBGEN_H */
+
+***** setup.h
+/* Define to 1 if you have the <libgen.h> header file. */
+#define HAVE_LIBGEN_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if zlib (-lz) is available. */
+/* #undef HAVE_LIBZ */
+
+***** setup.h
+/* Define to 1 if zlib (-lz) is available. */
+#define HAVE_LIBZ 1
+
+/* Define to 1 if you have the <link.h> header file. */
+#define HAVE_LINK_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `lrand48' function. */
+/* #undef HAVE_LRAND48 */
+
+***** setup.h
+/* Define to 1 if you have the `lrand48' function. */
+#define HAVE_LRAND48 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `mmap' function. */
+/* #undef HAVE_MMAP */
+
+***** setup.h
+/* Define to 1 if you have the `mmap' function. */
+#define HAVE_MMAP 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `snprintf' function. */
+/* #undef HAVE_SNPRINTF */
+
+***** setup.h
+/* Define to 1 if you have the `snprintf' function. */
+#define HAVE_SNPRINTF 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `socketpair' function. */
+/* #undef HAVE_SOCKETPAIR */
+
+***** setup.h
+/* Define to 1 if you have the `socketpair' function. */
+#define HAVE_SOCKETPAIR 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `srand48' function. */
+/* #undef HAVE_SRAND48 */
+
+***** setup.h
+/* Define to 1 if you have the `srand48' function. */
+#define HAVE_SRAND48 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <stdint.h> header file. */
+/* #undef HAVE_STDINT_H */
+
+***** setup.h
+/* Define to 1 if you have the <stdint.h> header file. */
+#define HAVE_STDINT_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <strings.h> header file. */
+/* #undef HAVE_STRINGS_H */
+
+***** setup.h
+/* Define to 1 if you have the <strings.h> header file. */
+#define HAVE_STRINGS_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `strtok_r' function. */
+/* #undef HAVE_STRTOK_R */
+
+***** setup.h
+/* Define to 1 if you have the `strtok_r' function. */
+#define HAVE_STRTOK_R 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if the system has the type `struct addrinfo'. */
+/* #undef HAVE_STRUCT_ADDRINFO */
+
+***** setup.h
+/* Define to 1 if the system has the type `struct addrinfo'. */
+#define HAVE_STRUCT_ADDRINFO 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if the system has the type `struct sockaddr_storage'. */
+/* #undef HAVE_STRUCT_SOCKADDR_STORAGE */
+
+***** setup.h
+/* Define to 1 if the system has the type `struct sockaddr_storage'. */
+#define HAVE_STRUCT_SOCKADDR_STORAGE 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <sys/param.h> header file. */
+/* #undef HAVE_SYS_PARAM_H */
+
+***** setup.h
+/* Define to 1 if you have the <sys/param.h> header file. */
+#define HAVE_SYS_PARAM_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <sys/resource.h> header file. */
+/* #undef HAVE_SYS_RESOURCE_H */
+
+***** setup.h
+/* Define to 1 if you have the <sys/resource.h> header file. */
+#define HAVE_SYS_RESOURCE_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <sys/wait.h> header file. */
+/* #undef HAVE_SYS_WAIT_H */
+
+/* Define to 1 if the system has the type `uintptr_t'. */
+/* #undef HAVE_UINTPTR_T */
+
+***** setup.h
+/* Define to 1 if you have the <sys/wait.h> header file. */
+#define HAVE_SYS_WAIT_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <unistd.h> header file. */
+/* #undef HAVE_UNISTD_H */
+
+***** setup.h
+/* Define to 1 if you have the <unistd.h> header file. */
+#define HAVE_UNISTD_H 1
+
+/* Define to 1 if you have the `usleep' function. */
+#define HAVE_USLEEP 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the `vsnprintf' function. */
+/* #undef HAVE_VSNPRINTF */
+
+***** setup.h
+/* Define to 1 if you have the `vsnprintf' function. */
+#define HAVE_VSNPRINTF 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if you have the <wait.h> header file. */
+/* #undef HAVE_WAIT_H */
+
+***** setup.h
+/* Define to 1 if you have the <wait.h> header file. */
+#define HAVE_WAIT_H 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define if IPv6 support is present and available. */
+/* #undef IPV6 */
+
+***** setup.h
+/* Define if IPv6 support is present and available. */
+#define IPV6 1
+
+/* Prefix where the ircd is installed. */
+#define IRCD_PREFIX "/home/mecanica/ircd"
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the local client heap. */
+#define LCLIENT_HEAP_SIZE 128
+
+***** setup.h
+/* Size of the local client heap. */
+#define LCLIENT_HEAP_SIZE 512
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define this to disable debugging support. */
+/* #undef NDEBUG */
+
+***** setup.h
+/* Define this to disable debugging support. */
+#define NDEBUG 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Nickname length */
+#define NICKLEN (_NICKLEN+1)
+
+***** setup.h
+/* Nickname length */
+#define NICKLEN (9+1)
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Size of the WHOWAS array. */
+#define NICKNAMEHISTORYLENGTH 1500
+
+***** setup.h
+/* Size of the WHOWAS array. */
+#define NICKNAMEHISTORYLENGTH 15000
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define if you have no native inet_aton() function. */
+#define NO_INET_ATON 1
+
+***** setup.h
+/* Define if you have no native inet_aton() function. */
+/* #undef NO_INET_ATON */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define if you have no native inet_ntop() function. */
+#define NO_INET_NTOP 1
+
+***** setup.h
+/* Define if you have no native inet_ntop() function. */
+/* #undef NO_INET_NTOP */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define if you have no native inet_pton() function. */
+#define NO_INET_PTON 1
+
+***** setup.h
+/* Define if you have no native inet_pton() function. */
+/* #undef NO_INET_PTON */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to the full name and version of this package. */
+#define PACKAGE_STRING "ircd-hybrid 7.2"
+
+***** setup.h
+/* Define to the full name and version of this package. */
+#define PACKAGE_STRING "ircd-hybrid 7.2.2"
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to the version of this package. */
+#define PACKAGE_VERSION "7.2"
+
+***** setup.h
+/* Define to the version of this package. */
+#define PACKAGE_VERSION "7.2.2"
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Path to /dev/null */
+#define PATH_DEVNULL "nul"
+
+***** setup.h
+/* Path to /dev/null */
+#define PATH_DEVNULL "/dev/null"
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* This is the type of IO loop we are using */
+#define SELECT_TYPE "WSAAsyncSelect"
+
+***** setup.h
+/* This is the type of IO loop we are using */
+#define SELECT_TYPE "epoll"
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Suffix for shared libraries on this platform. */
+/* #undef SHARED_SUFFIX */
+
+/* The size of a `int64_t', as computed by sizeof. */
+#define SIZEOF_INT64_T 8
+***** setup.h
+/* Suffix for shared libraries on this platform. */
+#define SHARED_SUFFIX ".so"
+
+/* The size of `int64_t', as computed by sizeof. */
+#define SIZEOF_INT64_T 8
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+
+/* The size of a `long long', as computed by sizeof. */
+#define SIZEOF_LONG_LONG 8
+***** setup.h
+
+/* The size of `long long', as computed by sizeof. */
+#define SIZEOF_LONG_LONG 8
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if dynamic modules can't be used. */
+#define STATIC_MODULES 1
+
+***** setup.h
+/* Define to 1 if dynamic modules can't be used. */
+/* #undef STATIC_MODULES */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to 1 if string.h may be included along with strings.h */
+/* #undef STRING_WITH_STRINGS */
+
+***** setup.h
+/* Define to 1 if string.h may be included along with strings.h */
+#define STRING_WITH_STRINGS 1
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+
+/* Size of the topic heap. */
+#define TOPIC_HEAP_SIZE 256
+
+***** setup.h
+
+/* Maximum topic length (<=390) */
+#define TOPICLEN 160
+
+/* Size of the topic heap. */
+#define TOPIC_HEAP_SIZE 1024
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+
+/* Use kqueue() for I/O loop */
+/* #undef USE_KQUEUE */
+
+/* Send vital ircd messages to syslog */
+***** setup.h
+
+/* Send vital ircd messages to syslog */
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* If system does not define in_port_t, define it to what it should be. */
+#define in_port_t u_short
+
+***** setup.h
+/* If system does not define in_port_t, define it to what it should be. */
+/* #undef in_port_t */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+#ifndef __cplusplus
+#define inline
+#endif
+***** setup.h
+#ifndef __cplusplus
+/* #undef inline */
+#endif
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* If system does not define sa_family_t, define it here. */
+#define sa_family_t u_short
+
+***** setup.h
+/* If system does not define sa_family_t, define it here. */
+/* #undef sa_family_t */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* If we don't have a real socklen_t, unsigned int is good enough. */
+#define socklen_t unsigned int
+
+***** setup.h
+/* If we don't have a real socklen_t, unsigned int is good enough. */
+/* #undef socklen_t */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* If system does not define u_int16_t, define a usable substitute. */
+#define u_int16_t unsigned short int
+
+***** setup.h
+/* If system does not define u_int16_t, define a usable substitute. */
+/* #undef u_int16_t */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* If system does not define u_int32_t, define to unsigned long int here. */
+#define u_int32_t unsigned int
+
+***** setup.h
+/* If system does not define u_int32_t, define to unsigned long int here. */
+/* #undef u_int32_t */
+
+*****
+
+***** C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h
+/* Define to `unsigned long long' if <sys/types.h> does not define. */
+#define uint64_t unsigned __int64
+
+#ifdef _MSC_VER
+/* Define the file access modes for MSVC */ 
+#define O_APPEND  0x0100    /* open the file in append mode */ 
+#define O_CREAT   0x0200    /* create the file if it doesn't exist */ 
+#define O_EXCL    0x0400    /* if the file exists don't create it again */ 
+#define O_TRUNC   0x0800    /* truncate the file after opening it */ 
+#define O_RDONLY  0         /* open the file with read access only */ 
+#define O_WRONLY  1         /* open the file with write access only */ 
+#define O_RDWR    2         /* open the file with both read and write privleges */ 
+
+/* Define the stat struct */ 
+#define stat _stat 
+#endif /* _MSC_VER */
+***** setup.h
+/* Define to `unsigned long long' if <sys/types.h> does not define. */
+/* #undef uint64_t */
+*****
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\setup.h.in and setup.h.in
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\sprintf_irc.h and sprintf_irc.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\stdinc.h and stdinc.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\supported.h and supported.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_auth.h and s_auth.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_bsd.h and s_bsd.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_conf.h and s_conf.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_gline.h and s_gline.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_log.h and s_log.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_misc.h and s_misc.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_serv.h and s_serv.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_stats.h and s_stats.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\s_user.h and s_user.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\tools.h and tools.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\userhost.h and userhost.h
+FC: no differences encountered
+
+Comparing files C:\DOWNLOADS\EVO-SRC\SRC\INCLUDE\whowas.h and whowas.h
+FC: no differences encountered
+
